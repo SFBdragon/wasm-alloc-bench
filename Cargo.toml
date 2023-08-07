@@ -1,5 +1,5 @@
 [package]
-name = "talc-wasm"
+name = "wasm-alloc-bench"
 version = "0.1.0"
 authors = ["Shaun Beautement <sf.beautement@protonmail.com>"]
 edition = "2018"

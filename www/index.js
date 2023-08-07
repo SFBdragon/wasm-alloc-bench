@@ -1,3 +1,3 @@
-import * as wasm from "talc-wasm";
+import * as wasm from "wasm-alloc-bench";
 
 wasm.bench();

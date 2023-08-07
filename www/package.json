@@ -1,10 +1,10 @@
 {
-  "name": "talc-wasm",
+  "name": "wasm-alloc-bench",
   "version": "0.1.0",
-  "description": "benchmark allocators",
+  "description": "Benchmark WASM Allocators",
   "main": "index.js",
   "bin": {
-    "talc-wasm": ".bin/talc-wasm.js"
+    "wasm-alloc-bench": ".bin/wasm-alloc-bench.js"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -13,7 +13,7 @@
   "author": "Shaun Beautement <sf.beautement@protonmail.com>",
   "license": "(MIT OR Apache-2.0)",
   "dependencies": {
-    "talc-wasm": "file:../pkg"
+    "wasm-alloc-bench": "file:../pkg"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.0",
