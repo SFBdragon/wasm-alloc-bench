@@ -17,9 +17,11 @@ console_error_panic_hook = "0.1.7"
 
 lol_alloc = { version = "0.4.0", optional = true }
 
-[dependencies.talc]
-path = "../talc"
-optional = true
+talc = { version = "3.0", optional = true }
+
+# [dependencies.talc]
+# path = "../talc"
+# optional = true
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.34"
