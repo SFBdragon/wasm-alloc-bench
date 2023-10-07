@@ -1,10 +1,7 @@
-#![feature(allocator_api)]
-
 use std::alloc::Layout;
+
 use wasm_bindgen::prelude::*;
 
-// comment out both to bench dlmalloc
-// comment out one to bench the other
 
 #[cfg(feature = "talc")]
 #[global_allocator]
@@ -19,6 +16,9 @@ static TALCK: talc::TalckWasm = unsafe { talc::TalckWasm::new_global() };
 extern "C" {
     #[wasm_bindgen(js_namespace = console)]
     fn log(s: &str);
+
+    #[wasm_bindgen(js_namespace = console, js_name = log)]
+    fn log_u32(a: u32);
 }
 
 #[wasm_bindgen]
@@ -97,5 +97,3 @@ fn random_actions_10_000_000() {
         unsafe { std::alloc::dealloc(ptr, layout); }
     }
 }
-
-
